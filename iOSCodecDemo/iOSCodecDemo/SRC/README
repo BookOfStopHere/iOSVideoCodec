@@ -1,0 +1,24 @@
+
+General mux:
+MP4 demux
+FLV demux
+
+maincodec:
+AVC/H.264
+HEVC/H.265
+
+
+##################
+
+Intra prediction
+
+Inter prediction
+
+loop filter
+
+DCT/Inverse-DCT
+
+Entropy Coding
+
+NALU
+##################
