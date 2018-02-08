@@ -12,7 +12,14 @@
 		2F42455D20285F1A00D35745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F42455B20285F1A00D35745 /* Main.storyboard */; };
 		2F42455F20285F1A00D35745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F42455E20285F1A00D35745 /* Assets.xcassets */; };
 		2F42456220285F1A00D35745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F42456020285F1A00D35745 /* LaunchScreen.storyboard */; };
-		2F42456520285F1A00D35745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F42456420285F1A00D35745 /* main.m */; };
+		2F42456520285F1A00D35745 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F42456420285F1A00D35745 /* main.mm */; };
+		2F4245782028672C00D35745 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4245772028672C00D35745 /* VideoToolbox.framework */; };
+		2F42457D2029A82000D35745 /* BaseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F42457B2029A82000D35745 /* BaseCodec.cpp */; };
+		2F4245802029A92800D35745 /* AVCCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F42457E2029A92800D35745 /* AVCCodec.cpp */; };
+		2F4245832029A9A300D35745 /* HEVCCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F4245812029A9A300D35745 /* HEVCCodec.cpp */; };
+		2F4245862029AA6B00D35745 /* BOSHMux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F4245842029AA6B00D35745 /* BOSHMux.cpp */; };
+		2F4245892029AA7C00D35745 /* BOSHDemux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F4245872029AA7C00D35745 /* BOSHDemux.cpp */; };
+		2F42458B2029AF8500D35745 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F42458A2029AF8500D35745 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +32,20 @@
 		2F42455E20285F1A00D35745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F42456120285F1A00D35745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F42456320285F1A00D35745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F42456420285F1A00D35745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F42456420285F1A00D35745 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		2F424570202866A300D35745 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		2F4245772028672C00D35745 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		2F42457B2029A82000D35745 /* BaseCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseCodec.cpp; sourceTree = "<group>"; };
+		2F42457C2029A82000D35745 /* BaseCodec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BaseCodec.hpp; sourceTree = "<group>"; };
+		2F42457E2029A92800D35745 /* AVCCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVCCodec.cpp; sourceTree = "<group>"; };
+		2F42457F2029A92800D35745 /* AVCCodec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVCCodec.hpp; sourceTree = "<group>"; };
+		2F4245812029A9A300D35745 /* HEVCCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HEVCCodec.cpp; sourceTree = "<group>"; };
+		2F4245822029A9A300D35745 /* HEVCCodec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HEVCCodec.hpp; sourceTree = "<group>"; };
+		2F4245842029AA6B00D35745 /* BOSHMux.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BOSHMux.cpp; sourceTree = "<group>"; };
+		2F4245852029AA6B00D35745 /* BOSHMux.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BOSHMux.hpp; sourceTree = "<group>"; };
+		2F4245872029AA7C00D35745 /* BOSHDemux.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BOSHDemux.cpp; sourceTree = "<group>"; };
+		2F4245882029AA7C00D35745 /* BOSHDemux.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BOSHDemux.hpp; sourceTree = "<group>"; };
+		2F42458A2029AF8500D35745 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F42458B2029AF8500D35745 /* AudioToolbox.framework in Frameworks */,
+				2F4245782028672C00D35745 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +66,7 @@
 			children = (
 				2F42455420285F1A00D35745 /* iOSCodecDemo */,
 				2F42455320285F1A00D35745 /* Products */,
+				2F4245762028672C00D35745 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +90,7 @@
 				2F42455E20285F1A00D35745 /* Assets.xcassets */,
 				2F42456020285F1A00D35745 /* LaunchScreen.storyboard */,
 				2F42456320285F1A00D35745 /* Info.plist */,
-				2F42456420285F1A00D35745 /* main.m */,
+				2F42456420285F1A00D35745 /* main.mm */,
 			);
 			path = iOSCodecDemo;
 			sourceTree = "<group>";
@@ -75,6 +98,8 @@
 		2F42456B20285F2B00D35745 /* SRC */ = {
 			isa = PBXGroup;
 			children = (
+				2F42457A2029A7F000D35745 /* Common */,
+				2F42456F2028664200D35745 /* Util */,
 				2F42456E20285F5C00D35745 /* MUX */,
 				2F42456D20285F3F00D35745 /* AVC */,
 				2F42456C20285F3F00D35745 /* HEVC */,
@@ -85,6 +110,8 @@
 		2F42456C20285F3F00D35745 /* HEVC */ = {
 			isa = PBXGroup;
 			children = (
+				2F4245812029A9A300D35745 /* HEVCCodec.cpp */,
+				2F4245822029A9A300D35745 /* HEVCCodec.hpp */,
 			);
 			path = HEVC;
 			sourceTree = "<group>";
@@ -92,6 +119,8 @@
 		2F42456D20285F3F00D35745 /* AVC */ = {
 			isa = PBXGroup;
 			children = (
+				2F42457E2029A92800D35745 /* AVCCodec.cpp */,
+				2F42457F2029A92800D35745 /* AVCCodec.hpp */,
 			);
 			path = AVC;
 			sourceTree = "<group>";
@@ -99,8 +128,38 @@
 		2F42456E20285F5C00D35745 /* MUX */ = {
 			isa = PBXGroup;
 			children = (
+				2F4245842029AA6B00D35745 /* BOSHMux.cpp */,
+				2F4245852029AA6B00D35745 /* BOSHMux.hpp */,
+				2F4245872029AA7C00D35745 /* BOSHDemux.cpp */,
+				2F4245882029AA7C00D35745 /* BOSHDemux.hpp */,
 			);
 			path = MUX;
+			sourceTree = "<group>";
+		};
+		2F42456F2028664200D35745 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2F424570202866A300D35745 /* config.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2F4245762028672C00D35745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F42458A2029AF8500D35745 /* AudioToolbox.framework */,
+				2F4245772028672C00D35745 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F42457A2029A7F000D35745 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F42457B2029A82000D35745 /* BaseCodec.cpp */,
+				2F42457C2029A82000D35745 /* BaseCodec.hpp */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +189,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = yang;
+				ORGANIZATIONNAME = BookOfStopHere;
 				TargetAttributes = {
 					2F42455120285F1A00D35745 = {
 						CreatedOnToolsVersion = 9.2;
@@ -175,8 +234,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F42455A20285F1A00D35745 /* ViewController.m in Sources */,
-				2F42456520285F1A00D35745 /* main.m in Sources */,
+				2F42456520285F1A00D35745 /* main.mm in Sources */,
 				2F42455720285F1A00D35745 /* AppDelegate.m in Sources */,
+				2F42457D2029A82000D35745 /* BaseCodec.cpp in Sources */,
+				2F4245832029A9A300D35745 /* HEVCCodec.cpp in Sources */,
+				2F4245892029AA7C00D35745 /* BOSHDemux.cpp in Sources */,
+				2F4245802029A92800D35745 /* AVCCodec.cpp in Sources */,
+				2F4245862029AA6B00D35745 /* BOSHMux.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +375,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67F7C7DY8T;
 				INFOPLIST_FILE = iOSCodecDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = yang.iOSCodecDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,8 +391,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67F7C7DY8T;
 				INFOPLIST_FILE = iOSCodecDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = yang.iOSCodecDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

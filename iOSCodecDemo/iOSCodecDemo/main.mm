@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-
+#include "AVCCodec.hpp"
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        bool isyes = Codec::AVCCodec::hardwareCodecCapabilities();
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
